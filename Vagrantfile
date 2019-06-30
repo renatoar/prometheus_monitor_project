@@ -49,15 +49,15 @@ Vagrant.configure("2") do |config|
 			git clone https://github.com/renatoar/monitoring_container.git
 			git clone https://github.com/renatoar/vm_monitoring_container.git
 			git clone https://github.com/renatoar/transferfileapp_container.git
-			cd monitoring_container
-			sudo docker build -t containers_monitor .
+			#cd monitoring_container
+			#sudo docker build -t containers_monitor .
 			#sudo docker run -d --name containers_monitor containers_monitor
-			cd vm_monitoring_container
-			sudo docker build -t vm_monitor .
+			#cd vm_monitoring_container
+			#sudo docker build -t vm_monitor .
 			#sudo docker run -d --name vm_monitor vm_monitor
-			cd transferfileapp_container
-			sudo docker build -t transferfileapp .
-			sudo docker run -d -p 8000:8000 --name transferfileapp transferfileapp
+			#cd transferfileapp_container
+			#sudo docker build -t transferfileapp .
+			#sudo docker run -d -p 8000:8000 --name transferfileapp transferfileapp
 		SHELL
 	end
 end
