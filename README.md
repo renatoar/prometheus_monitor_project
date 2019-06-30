@@ -2,7 +2,7 @@
 
 Trabalho prático da disciplina de Tópicos Avançados em Redes de Computadores e Sistemas Distribuidos. UFScar Sorocaba
 
-![Overview Image](https://user-images.githubusercontent.com/18008072/60396845-d10a1800-9b1c-11e9-80e4-16f5fdf170e7.jpg)
+![Overview Image](https://user-images.githubusercontent.com/18008072/60397334-593eec00-9b22-11e9-8174-6fb952a0b104.jpg)
 
 
 ## Como usar (Se for montar as VMs localmente, ir para o passo 4)
