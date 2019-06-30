@@ -2,14 +2,15 @@
 
 Trabalho prático da disciplina de Tópicos Avançados em Redes de Computadores e Sistemas Distribuidos. UFScar Sorocaba
 
-![Overview Image](https://user-images.githubusercontent.com/18008072/60397334-593eec00-9b22-11e9-8174-6fb952a0b104.jpg)
+![Overview Image](https://user-images.githubusercontent.com/18008072/60402432-f8d19e00-9b65-11e9-8d67-827aba1fcedf.jpg)
 
 
 ## Como usar (Se for montar as VMs localmente, ir para o passo 4)
 
 1 - Executar o comando abaixo e acessar pasta /slice-enablers/arquivos
+```
 	https://github.com/dcomp-leris/slice-enablers.git
-
+```
 2 - Usar os comandos abaixo para acessar cloud ufscar
 ```
 	chmod 400 arquivos/cloud_ufscar_rsa.dms
@@ -60,27 +61,27 @@ Trabalho prático da disciplina de Tópicos Avançados em Redes de Computadores 
  - Instalar Vagrant.
  - Instalar VirtualBox.
  - Rodar comando 'vagrant up' na pasta do projeto.
- - Para acessar as máquinas o comando é o mesmo 'vagrant ssh nome_da_vm'
+ - Para acessar as máquinas o comando é o mesmo: 'vagrant ssh nome_da_vm'
 
 ## Aplicação de transferência de arquivos
 
-Este container expôe os arquivos para acesso em http://192.168.50.20:8000
+Este container expôe seus arquivos para acesso em http://192.168.50.20:8000
 
 ## Repositórios das aplicações usadas no projeto:
-    ```
-    - Prometheus para monitoramento
-
-        git clone https://github.com/renatoar/prometheus_monitoring_docker.git
-
-    - App Monitor de Container
-
-        git clone https://github.com/renatoar/monitoring_container.git
-
-    - App Monitor de VMs (Hosts)
-
-        git clone https://github.com/renatoar/vm_monitoring_container.git
-
-    - App Transferência de arquivos
-
-        git clone https://github.com/renatoar/transferfileapp_container.git
-    ```
+    
+- Prometheus para monitoramento
+```
+    git clone https://github.com/renatoar/prometheus_monitoring_docker.git
+```
+- App Monitor de Container
+```
+    git clone https://github.com/renatoar/monitoring_container.git
+```
+- App Monitor de VMs (Hosts)
+```
+    git clone https://github.com/renatoar/vm_monitoring_container.git
+```
+- App Transferência de arquivos
+```
+    git clone https://github.com/renatoar/transferfileapp_container.git
+```
