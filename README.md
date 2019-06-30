@@ -2,7 +2,7 @@
 
 Trabalho prático da disciplina de Tópicos Avançados em Redes de Computadores e Sistemas Distribuidos. UFScar Sorocaba
 
-<img src=”https://user-images.githubusercontent.com/18008072/60396845-d10a1800-9b1c-11e9-80e4-16f5fdf170e7.jpg”>
+![Overview Image](https://user-images.githubusercontent.com/18008072/60396845-d10a1800-9b1c-11e9-80e4-16f5fdf170e7.jpg)
 
 
 ## Como usar (Se for montar as VMs localmente, ir para o passo 4)
@@ -63,20 +63,20 @@ Trabalho prático da disciplina de Tópicos Avançados em Redes de Computadores 
  - Para acessar as máquinas o comando é o mesmo 'vagrant ssh nome_da_vm'
 
 ## Repositórios das aplicações usadas no projeto:
-
+    ```
     - Prometheus para monitoramento
-    ```
+
         git clone https://github.com/renatoar/prometheus_monitoring_docker.git
-    ```
+
     - App Monitor de Container
-    ```
+
         git clone https://github.com/renatoar/monitoring_container.git
-    ```
+
     - App Monitor de VMs (Hosts)
-    ```
+
         git clone https://github.com/renatoar/vm_monitoring_container.git
-    ```
+
     - App Transferência de arquivos
-    ```
+
         git clone https://github.com/renatoar/transferfileapp_container.git
     ```
