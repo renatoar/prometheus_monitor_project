@@ -46,6 +46,7 @@ Vagrant.configure("2") do |config|
 			sudo systemctl enable docker
 			sudo docker run -d --restart=always --net="host" --pid="host" --publish=9100:9100 --detach=true --name=node-exporter -v "/:/host:ro,rslave" quay.io/prometheus/node-exporter --path.rootfs /host
 			sudo docker run --restart=always --volume=/:/rootfs:ro --volume=/var/run:/var/run:ro --volume=/sys:/sys:ro --volume=/var/lib/docker/:/var/lib/docker:ro --volume=/dev/disk/:/dev/disk:ro --publish=8080:8080 --detach=true --name=cadvisor google/cadvisor:latest
+			sudo docker run --name mongodb -p 17017:27017 -d mongo
 			git clone https://github.com/renatoar/monitoring_container.git
 			git clone https://github.com/renatoar/vm_monitoring_container.git
 			git clone https://github.com/renatoar/transferfileapp_container.git
