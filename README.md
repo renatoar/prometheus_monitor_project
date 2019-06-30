@@ -62,6 +62,10 @@ Trabalho prático da disciplina de Tópicos Avançados em Redes de Computadores 
  - Rodar comando 'vagrant up' na pasta do projeto.
  - Para acessar as máquinas o comando é o mesmo 'vagrant ssh nome_da_vm'
 
+## Aplicação de transferência de arquivos
+
+Este container expôe os arquivos para acesso em http://192.168.50.20:8000
+
 ## Repositórios das aplicações usadas no projeto:
     ```
     - Prometheus para monitoramento
