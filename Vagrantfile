@@ -50,8 +50,8 @@ Vagrant.configure("2") do |config|
 			sudo systemctl start docker
 			sudo systemctl enable docker
 			# Docker Swarm join
-			chmod +x /vagrant/token/join.sh
-			bash /vagrant/token/join.sh
+			chmod +x /swarm_token/join.sh
+			bash /swarm_token/join.sh
 			# Prometheus exporters solution startup
 			sudo docker run -d --restart=always --net="host" --pid="host" --publish=9100:9100 --detach=true --name=node-exporter -v "/:/host:ro,rslave" quay.io/prometheus/node-exporter --path.rootfs /host
 			sudo docker run --restart=always --volume=/:/rootfs:ro --volume=/var/run:/var/run:ro --volume=/sys:/sys:ro --volume=/var/lib/docker/:/var/lib/docker:ro --volume=/dev/disk/:/dev/disk:ro --publish=8080:8080 --detach=true --name=cadvisor google/cadvisor:latest
