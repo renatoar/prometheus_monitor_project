@@ -55,3 +55,8 @@ Este container expôe seus arquivos para acesso em http://192.168.50.20:8000
 - App Monitor de Container: https://github.com/renatoar/monitoring_container.git
 - App Monitor de VMs (Hosts): https://github.com/renatoar/vm_monitoring_container.git
 - App Transferência de arquivos: https://github.com/renatoar/transferfileapp_container.git
+
+## Dificuldades de implementação
+
+Uma das dificuldades encontradas foi descobrir por que os containers das aplicações de persistência de dados monitorados caíam depois de alguns segundos. Depois de muitos testes, descobrimos que havia erros na aplicação python que por consequência derrubava os containers.
+Também vale citar que a aplicação de transfência de arquivos não está totalmente implementada por termos focado mais tempo nos outros aspectos do projeto. No estado atual ela apenas expôe os diretórios raiz do container, ou seja, é possível replicar testes de transferência e não de recebimento de arquivos. Essa aplicação é um recurso básico do python que cria um servidor para testes.
