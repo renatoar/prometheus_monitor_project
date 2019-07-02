@@ -32,56 +32,29 @@ Trabalho prático da disciplina de Tópicos Avançados em Redes de Computadores 
     vagrant up
 ```
 
-6 - Após termino da configuração do Vagrant, acessar a vmworker pelo comando abaixo:
-```	
-    vagrant ssh vmworker
-```
+## Acesso as aplicações
 
-7 - Procurar e copiar do terminal o comando 'docker swarm join' e rodar na máquina vmworker.
-
-
-8 - Rodar os comandos abaixo para subir as imagens dos containers e coloca-los em funcionamento
-```	
-    # App Monitor de Container
-    cd monitoring_container
-    sudo docker build -t containers_monitor .
-    sudo docker run -d --name containers_monitor containers_monitor
-    # App Monitor de VMs (Hosts)
-    cd vm_monitoring_container
-    sudo docker build -t vm_monitor .
-    sudo docker run -d --name vm_monitor vm_monitor
-    # App Transferência de arquivos
-    cd transferfileapp_container
-    sudo docker build -t transferfileapp .
-    sudo docker run -d -p 8000:8000 --name transferfileapp transferfileapp
-```
+ - Prometheus: http://192.168.50.10:9090
+ - TransferFile: http://192.168.50.20:8000/
+ - Grafana: http://192.168.50.10:3000/
+ - VM Monitor e Containers Monitor: Instalar solução para conexão e visualização de dados (Sugerido Robo 3T) e fazer conexão em http://192.168.50.20:17017/
 
 ## Instalação Windows
 
  - Instalar Vagrant.
  - Instalar VirtualBox.
  - Rodar comando 'vagrant up' na pasta do projeto.
- - Para acessar as máquinas o comando é o mesmo: 'vagrant ssh nome_da_vm'
-
-## Aplicação de transferência de arquivos
-
-Este container expôe seus arquivos para acesso em http://192.168.50.20:8000
+Para acessar as máquinas o comando é o mesmo: 'vagrant ssh nome_da_vm'
 
 ## Repositórios das aplicações usadas no projeto:
     
-- Prometheus para monitoramento
-```
-    git clone https://github.com/renatoar/prometheus_monitoring_docker.git
-```
-- App Monitor de Container
-```
-    git clone https://github.com/renatoar/monitoring_container.git
-```
-- App Monitor de VMs (Hosts)
-```
-    git clone https://github.com/renatoar/vm_monitoring_container.git
-```
-- App Transferência de arquivos
-```
-    git clone https://github.com/renatoar/transferfileapp_container.git
-```
+- Prometheus para monitoramento: https://github.com/renatoar/prometheus_monitoring_docker.git
+- App Monitor de Container: https://github.com/renatoar/monitoring_container.git
+- App Monitor de VMs (Hosts): https://github.com/renatoar/vm_monitoring_container.git
+- App Transferência de arquivos: https://github.com/renatoar/transferfileapp_container.git
+
+## Dificuldades de implementação
+
+Uma das dificuldades encontradas foi descobrir por que os containers das aplicações de persistência de dados monitorados caíam depois de alguns segundos. Depois de muitos testes, descobrimos que havia erros na aplicação python que por consequência derrubava os containers.
+
+Também vale citar que a aplicação de transfência de arquivos não está totalmente implementada por termos focado mais tempo nos outros aspectos do projeto. No estado atual ela apenas expôe os diretórios raiz do container, ou seja, é possível replicar testes de transferência e não de recebimento de arquivos. Essa aplicação é um recurso básico do python que cria um servidor para testes.
