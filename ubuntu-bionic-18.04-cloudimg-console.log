@@ -663,6 +663,139 @@ ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJKMikHf
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMjoLyeZxl4T1u+/cRRgxO3+Ts7wKgjzfEL4YIsZRq5D root@ubuntu-bionic
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDZEfEs4KBUubvG4frBNWRK3h7baDEOkkZU4YhczXssABOuHsGQXOtsLizUKRNBDp0kfmh/FUiN7tDqwBF4TPfivnnmyuOlaOzBmekn9+asbEcBzZpkDcONc4ZZ588VMzRNzchWsnapUlIARSN3ww2ItXUV/UpVFOxKmwLjg+LvuhUPfoDq262YzIG7hVWiVle3PkfSJk2BFqiKIxPXnrUPq4p4gaRPnqi9wYAShwPW97V8L6E9Fr5SGE4oAwuE05fvJkKJ3peKqHkgmKnflMPh33/ARUnA9ecjK+XecxI+mh0kp3pIzyn4f7FqTI0nXuxlkJzV3biSpV7Wyelh2wvN root@ubuntu-bionic
 -----END SSH HOST KEY KEYS-----
-[   23.627351] cloud-init[1563]: Cloud-init v. 19.1-1-gbaa47854-0ubuntu1~18.04.1 running 'modules:final' at Tue, 02 Jul 2019 00:48:56 +0000. Up 23.35 seconds.
-[   23.630243] cloud-init[1563]: ci-info: no authorized ssh keys fingerprints found for user ubuntu.
-[   23.631256] cloud-init[1563]: Cloud-init v. 19.1-1-gbaa47854-0ubuntu1~18.04.1 finished at Tue, 02 Jul 2019 00:48:57 +0000. Datasource DataSourceNoCloud [seed=/dev/sdb][dsmode=net].  Up 23.60 seconds
+[   23.627351] cloud-init[1563]: Cloud-init v. 19.1-1-gbaa47854-0ubuntu1~18.0[ 4597.627478] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[ 4597.627478]   Tx Queue             <0>
+[ 4597.627478]   TDH                  <92>
+[ 4597.627478]   TDT                  <94>
+[ 4597.627478]   next_to_use          <94>
+[ 4597.627478]   next_to_clean        <92>
+[ 4597.627478] buffer_info[next_to_clean]
+[ 4597.627478]   time_stamp           <100106400>
+[ 4597.627478]   next_to_watch        <93>
+[ 4597.627478]   jiffies              <100106640>
+[ 4597.627478]   next_to_watch.status <0>
+[ 4599.675555] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[ 4599.675555]   Tx Queue             <0>
+[ 4599.675555]   TDH                  <92>
+[ 4599.675555]   TDT                  <94>
+[ 4599.675555]   next_to_use          <94>
+[ 4599.675555]   next_to_clean        <92>
+[ 4599.675555] buffer_info[next_to_clean]
+[ 4599.675555]   time_stamp           <100106400>
+[ 4599.675555]   next_to_watch        <93>
+[ 4599.675555]   jiffies              <100106840>
+[ 4599.675555]   next_to_watch.status <0>
+[ 4601.722591] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[ 4601.722591]   Tx Queue             <0>
+[ 4601.722591]   TDH                  <92>
+[ 4601.722591]   TDT                  <94>
+[ 4601.722591]   next_to_use          <94>
+[ 4601.722591]   next_to_clean        <92>
+[ 4601.722591] buffer_info[next_to_clean]
+[ 4601.722591]   time_stamp           <100106400>
+[ 4601.722591]   next_to_watch        <93>
+[ 4601.722591]   jiffies              <100106a40>
+[ 4601.722591]   next_to_watch.status <0>
+[ 4603.738773] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[ 4603.738773]   Tx Queue             <0>
+[ 4603.738773]   TDH                  <92>
+[ 4603.738773]   TDT                  <94>
+[ 4603.738773]   next_to_use          <94>
+[ 4603.738773]   next_to_clean        <92>
+[ 4603.738773] buffer_info[next_to_clean]
+[ 4603.738773]   time_stamp           <100106400>
+[ 4603.738773]   next_to_watch        <93>
+[ 4603.738773]   jiffies              <100106c38>
+[ 4603.738773]   next_to_watch.status <0>
+[ 4605.562337] e1000 0000:00:03.0 enp0s3: Reset adapter
+[24428.953625] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[24428.953625]   Tx Queue             <0>
+[24428.953625]   TDH                  <bc>
+[24428.953625]   TDT                  <be>
+[24428.953625]   next_to_use          <be>
+[24428.953625]   next_to_clean        <bc>
+[24428.953625] buffer_info[next_to_clean]
+[24428.953625]   time_stamp           <1005c0a00>
+[24428.953625]   next_to_watch        <bd>
+[24428.953625]   jiffies              <1005c0ec8>
+[24428.953625]   next_to_watch.status <0>
+[24430.970850] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[24430.970850]   Tx Queue             <0>
+[24430.970850]   TDH                  <bc>
+[24430.970850]   TDT                  <be>
+[24430.970850]   next_to_use          <be>
+[24430.970850]   next_to_clean        <bc>
+[24430.970850] buffer_info[next_to_clean]
+[24430.970850]   time_stamp           <1005c0a00>
+[24430.970850]   next_to_watch        <bd>
+[24430.970850]   jiffies              <1005c10c0>
+[24430.970850]   next_to_watch.status <0>
+[24431.480858] e1000 0000:00:03.0 enp0s3: Reset adapter
+[26226.649357] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[26226.649357]   Tx Queue             <0>
+[26226.649357]   TDH                  <e6>
+[26226.649357]   TDT                  <e8>
+[26226.649357]   next_to_use          <e8>
+[26226.649357]   next_to_clean        <e6>
+[26226.649357] buffer_info[next_to_clean]
+[26226.649357]   time_stamp           <10062e800>
+[26226.649357]   next_to_watch        <e7>
+[26226.649357]   jiffies              <10062ea58>
+[26226.649357]   next_to_watch.status <0>
+[26228.666916] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[26228.666916]   Tx Queue             <0>
+[26228.666916]   TDH                  <e6>
+[26228.666916]   TDT                  <e8>
+[26228.666916]   next_to_use          <e8>
+[26228.666916]   next_to_clean        <e6>
+[26228.666916] buffer_info[next_to_clean]
+[26228.666916]   time_stamp           <10062e800>
+[26228.666916]   next_to_watch        <e7>
+[26228.666916]   jiffies              <10062ec50>
+[26228.666916]   next_to_watch.status <0>
+[26230.683030] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[26230.683030]   Tx Queue             <0>
+[26230.683030]   TDH                  <e6>
+[26230.683030]   TDT                  <e8>
+[26230.683030]   next_to_use          <e8>
+[26230.683030]   next_to_clean        <e6>
+[26230.683030] buffer_info[next_to_clean]
+[26230.683030]   time_stamp           <10062e800>
+[26230.683030]   next_to_watch        <e7>
+[26230.683030]   jiffies              <10062ee48>
+[26230.683030]   next_to_watch.status <0>
+[26232.698023] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[26232.698023]   Tx Queue             <0>
+[26232.698023]   TDH                  <e6>
+[26232.698023]   TDT                  <e8>
+[26232.698023]   next_to_use          <e8>
+[26232.698023]   next_to_clean        <e6>
+[26232.698023] buffer_info[next_to_clean]
+[26232.698023]   time_stamp           <10062e800>
+[26232.698023]   next_to_watch        <e7>
+[26232.698023]   jiffies              <10062f040>
+[26232.698023]   next_to_watch.status <0>
+[26233.465127] e1000 0000:00:03.0 enp0s3: Reset adapter
+[47196.862961] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[47196.862961]   Tx Queue             <0>
+[47196.862961]   TDH                  <3f>
+[47196.862961]   TDT                  <41>
+[47196.862961]   next_to_use          <41>
+[47196.862961]   next_to_clean        <3f>
+[47196.862961] buffer_info[next_to_clean]
+[47196.862961]   time_stamp           <100b2e60f>
+[47196.862961]   next_to_watch        <40>
+[47196.862961]   jiffies              <100b2e911>
+[47196.862961]   next_to_watch.status <0>
+[47199.098017] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[47199.098017]   Tx Queue             <0>
+[47199.098017]   TDH                  <3f>
+[47199.098017]   TDT                  <41>
+[47199.098017]   next_to_use          <41>
+[47199.098017]   next_to_clean        <3f>
+[47199.098017] buffer_info[next_to_clean]
+[47199.098017]   time_stamp           <100b2e60f>
+[47199.098017]   next_to_watch        <40>
+[47199.098017]   jiffies              <100b2eb40>
+[47199.098017]   next_to_watch.status <0>
+[47200.633514] e1000 0000:00:03.0 enp0s3: Reset adapter
