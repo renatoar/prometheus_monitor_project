@@ -37,7 +37,7 @@ Trabalho prático da disciplina de Tópicos Avançados em Redes de Computadores 
  - Prometheus: http://192.168.50.10:9090
  - TransferFile: http://192.168.50.20:8000/
  - Grafana: http://192.168.50.10:3000/
- - VM Monitor e Containers Monitor: Instalar solução para conexão e visualização de dados (Sugerido Robo 3T) e fazer conexão em http://192.168.50.20:17017/
+ - VM Monitor e Containers Monitor: Instalar solução para conexão com banco e visualização de dados (Sugerido Robo 3T) e fazer conexão em http://192.168.50.20:17017/
 
 ## Instalação Windows
 
